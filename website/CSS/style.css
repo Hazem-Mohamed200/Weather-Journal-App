@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', cursive;
+}
+
+label {
+
+    display:block;
+    font-size: 27px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+textarea {
+    font-size: 20px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color:white;    
+    font-size: 26px;
+    background: black;
+    box-shadow: 2px 4px 5px #444;
+}
+
+button:hover {
+
+    transform: scale(1.2);
+}
+
+.invalid {
+
+    height: 60px;
+    width: 320px;
+    color:red;
+    font-size: 20px;
+    text-align: center;
+    background: white;
+
+}
+
+.valid {
+
+    height: 60px;
+    width: 320px;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    background: white;
+
+}
+
+.backgroundImage {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../Images/background.jpg');
+}
+
+.myInput {
+    padding: 20px;
+}
+
+.title {
+
+    opacity: 100%;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+#titleText {
+    
+    padding: 50px;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+#entryHolder {
+    
+    width: 600px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-left: 655px;
+    border-radius: 10px;
+    background-color: rgb(132,163,180);
+    overflow-wrap: break-word;
+}
+
+div.entryText {
+    color:white;
+    font-size: 30px;
+    padding-left: 20px;
+}
