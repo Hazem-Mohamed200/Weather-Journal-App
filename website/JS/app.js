@@ -1,8 +1,8 @@
 let date = new Date();
 let goodFormatDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 
-const apiKey = '&appid=87f817a605d02d97f5f925d6667d95af';
-const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?id=';
+const apiKey = '&appid=87f817a605d02d97f5f925d6667d95af&units=metric';
+const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
 
 
 document.getElementById('generate').addEventListener('click', function(){
@@ -62,10 +62,10 @@ const updateUI = async () => {
         
         const data = await request.json();
         console.log(data);
-        document.getElementById('date').textContent = `Date: ${data[0].date}`;
-        document.getElementById('city').textContent = `City: ${data[0].city}`;
-        document.getElementById('content').textContent = `Feeling: ${data[0].feeling}`;
-        document.getElementById('temp').textContent = `Temperature: ${Math.round(data[0].temperature)} degrees`;
+        document.getElementById('date').textContent = `Date: ${data.date}`;
+        document.getElementById('city').textContent = `City: ${data.city}`;
+        document.getElementById('content').textContent = `Feeling: ${data.feeling}`;
+        document.getElementById('temp').textContent = `Temperature: ${Math.round(data.temperature)} degrees`;
 
 
     }catch(error){
